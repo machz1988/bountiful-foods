@@ -1,0 +1,219 @@
+:root{
+    --primary-color: #143109;
+    --secondary-color: #463239;
+    --tertiary-color: #1B998B;
+    --accent1-color: #E1CA96;
+    --accent2-color: #DD6031;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+body{
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 1.3rem;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Nerko One', sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.business-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-bf{
+    border-radius: 1em;
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+.business-info h1{
+    margin: 0;
+    align-self: center;
+    padding-left: 0.5rem;
+}
+
+.phoneNumber{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.phone{
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.hamButton{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: none;
+    font-size: 2rem;
+    padding: 0;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.hamButton span:nth-child(1){
+    display: block;
+}
+
+.hamButton span:nth-child(2){
+    display: none;
+}
+
+.hamButton.open span:nth-child(1){
+    display: none;
+}
+
+.hamButton.open span:nth-child(2){
+    display: block;
+}
+
+.mainNav{
+    display: none;
+    background-color: var(--secondary-color);
+}
+
+.mainNav.open{
+    display: block;
+}
+
+.mainNav ul{
+    padding: 0;
+    margin: 0;
+}
+
+.mainNav li{
+    list-style: none;
+    padding: 0.5rem;
+    border-bottom: 0.05rem solid var(--accent1-color);    
+}
+
+.mainNav li:hover{
+    background-color: var(--accent2-color);
+}
+
+.mainNav li:hover a{
+    color: var(--white-color);
+}
+
+.mainNav a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.aActive{
+    background-color: var(--tertiary-color);
+}
+
+.aActive a{
+    color: var(--white-color);
+}
+
+.mainHome{
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction{
+    position: relative;
+}
+
+.callToAction img{
+    width: 100%;
+}
+
+.callToAction a{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.callToAction a:hover{
+    background-color: var(--accent2-color);
+    color: var(--white-color);
+}
+
+.coastalAreas{
+    display: flex;
+    flex-direction: column;
+}
+
+.coastalAreas article{
+    border-top: 0.2rem solid var(--primary-color);
+}
+
+.coastalAreas h2{
+    text-align: center;
+}
+
+.coastalAreas p{
+    text-align: center;
+}
+
+.coastalAreas img{
+    width: 100%;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.2rem solid var(--primary-color);
+}
+
+.weather img{
+    width: 5rem;
+}
+
+.drinksServed{
+    padding: 1rem;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.socialMedia{
+    padding: 1rem;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.enterpriseInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.enterpriseInfo img{
+    border: 0.1rem dotted var(--accent2-color);
+    width: 7rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+}
+
+.enterpriseInfo div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.developerData{
+    border-top: 0.1rem dashed var(--accent2-color);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
