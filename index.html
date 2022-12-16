@@ -24,6 +24,10 @@
                 <span class="phone">+1 (760) 827-6701</span>
                 <button class="hamButton"><span>&#9776;</span><span>&#9747;</span></button>
             </div>
+            
+        </header>
+        
+        <main class="mainHome">
             <nav class="mainNav">
                 <ul>
                     <li class="aActive"><a href="index.html">Home</a></li>
@@ -31,15 +35,13 @@
                     <li><a href="aboutus.html">About Us</a></li>
                 </ul>
             </nav>
-        </header>
-        <main class="mainHome">
             <div class="callToAction">
                 <picture>
                     <source media="(max-width: 32rem)" srcset="images/fruit_drink_mix_small.jpg">
                     <source media="(max-width: 60rem)" srcset="images/fruit_drink_mix_medium.jpg">
                     <img src="images/fruit_drink_mix_large.jpg" alt="Make your drink image">
                 </picture>
-                <a href="fresh.html">Make your drink</a>
+                <a class="urlButton" href="fresh.html">Make your drink</a>
             </div>
             <div class="coastalAreas">
                 <article>
@@ -61,54 +63,56 @@
             <div class="weather">
                 <h2>Weather of Carlsbad</h2>
                 <article>
-                    <h3 class="weather-date1"></h3>
-                    <div class="condition-icon1">
+                    <div class="weather-condition">
                         
                     </div>
-                    <span>Wind speed: <strong><span class="wind-speed1"></span></strong> km/h</span>
-                    <span>Wind chill: <strong><span class="wind-chill1"></span></strong></span>
+                    <span>Humidity: <strong><span class="humidity"></span></strong></span>
                 </article>
-                <article>
-                    <h3 class="weather-date2"></h3>
-                    <div class="condition-icon2">
-                        
-                    </div>
-                    <span>Wind speed: <strong><span class="wind-speed2"></span></strong> km/h</span>
-                    <span>Wind chill: <strong><span class="wind-chill2"></span></strong></span>
-                </article>
-                <article>
-                    <h3 class="weather-date3"></h3>
-                    <div class="condition-icon3">
-                        
-                    </div>
-                    <span>Wind speed: <strong><span class="wind-speed3"></span></strong> km/h</span>
-                    <span>Wind chill: <strong><span class="wind-chill3"></span></strong></span>
-                </article>
+                
+                <div class="forecast">
+                    <h2>Forecast</h2>    
+                </div>
             </div>
-            <div class="drinksServed"><span>Special Drinks Serverd:</span></div>
-            <div class="socialMedia"><span>Visit Us!</span></div>
+            <div class="drinksServed">
+                <span>Special Drinks Served: <strong><span id="numberDrinksServed"></span></strong></span>
+            </div>
+            <div class="socialMedia">
+                <span>Visit Us!</span>
+                <a href="https://www.facebook.com/"><img src="images/facebook_icon.png"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram_icon.png"></a>
+                <a href="https://web.whatsapp.com/"><img src="images/whatsapp_icon.png"></a>
+            </div>
         </main>
         <footer>
             <div class="enterpriseInfo">
                 <img src="images/logo_bf.png" alt="Logo of Bountiful Foods">
                 <div>
                     <span>Bountiful Foods</span>
-                    <span>1 May 5th Street</span>
-                    <span>Carlsbad, CA 59792</span>
+                    <span>1170 Tamarack Ave</span>
+                    <span>Carlsbad, CA 92008</span>
                 </div>
                 <div>
                     <span>info@bountifulfoods.com</span>
                     <span>+1 (760) 827-6701</span>
-                    <span>Location Map</span>
+                    <a class="urlButton" href="https://www.google.com.mx/maps/place/1170+Tamarack+Ave,+Carlsbad,+CA+92008,+EE.+UU./@33.1538339,-117.3354557,759m/data=!3m2!1e3!4b1!4m13!1m7!3m6!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!2sCarlsbad,+California,+EE.+UU.!3b1!8m2!3d33.1580933!4d-117.3505939!3m4!1s0x80dc723f58be8795:0xbf647f3b42f89708!8m2!3d33.1538339!4d-117.333267">Location Map</a>
                 </div>
             </div>
             <div class="developerData">
-                <span>&copy;<span id="currectYear"></span> Bountiful Foods</span>
-                <span>Manuel Cipriano</span>
-                <span>WDD 230 Project</span>
-                <span>Last Modification: <span id="lastModified"></span></span>
-                <span>Weather provided by <a href="https://openweathermap.org">Open Weather Map</a></span>
-                <a href="resources.html">List of resources</a>
+                <div>
+                    <span>&copy;<span id="currentYear"></span> Bountiful Foods</span>
+                    <span>Manuel Cipriano</span>
+                    <span>WDD 230 Project</span>
+                    <span>Last Modification: <span id="lastModified"></span></span>
+                </div>
+                <div>
+                    <span>.</span>
+                    <span>Weather provided by </span>
+                    <a class="urlButton" href="https://openweathermap.org">Open Weather Map</a>
+                </div>
+                <div>
+                    <span>.</span>
+                    <a class="urlButton" href="resources.html">List of resources</a>
+                </div>
             </div>
         </footer>
         <script src="scripts/main.js"></script>

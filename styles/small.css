@@ -133,15 +133,18 @@ header{
 .callToAction a{
     position: absolute;
     bottom: 1rem;
-    right: 1rem;
+    left: 1rem;
+}
+
+.urlButton{
     text-decoration: none;
     background-color: var(--secondary-color);
     color: var(--white-color);
     padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
-.callToAction a:hover{
+.urlButton:hover{
     background-color: var(--accent2-color);
     color: var(--white-color);
 }
@@ -171,20 +174,45 @@ header{
     display: flex;
     flex-direction: column;
     border-top: 0.2rem solid var(--primary-color);
+    text-align: center;
 }
 
 .weather img{
     width: 5rem;
 }
 
+.forecast{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
 .drinksServed{
     padding: 1rem;
     border-top: 0.1rem solid var(--primary-color);
+    text-align: center;
 }
 
 .socialMedia{
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
-    border-top: 0.1rem solid var(--primary-color);
+    border-top: 0.05rem dashed var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedia a{
+    padding-left: 0.3rem;
+}
+
+.socialMedia > img{
+    width: 5rem;
+}
+
+.socialMedia a:nth-child(3) img{
+    width: 2.5rem;
 }
 
 footer{
@@ -195,12 +223,14 @@ footer{
 .enterpriseInfo{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .enterpriseInfo img{
     border: 0.1rem dotted var(--accent2-color);
     width: 7rem;
     border-radius: 4rem;
+    margin: 0 auto;
     margin-top: 1rem;
 }
 
@@ -216,4 +246,15 @@ footer{
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.developerData div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    width: 12rem;
+    margin: 0 auto;
 }
