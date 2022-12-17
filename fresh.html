@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fresh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Fresh page">
+        <link rel="shorcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nerko+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+    </head>
+    <body>
+        <header>
+            <div class="business-info">
+                <img class="logo-bf" src="images/logo_bf.png" alt="Logo of Bountiful Foods">
+                <h1>Bountiful Foods</h1>
+            </div>
+            <div class="phoneNumber">
+                <span class="phone">+1 (760) 827-6701</span>
+                <button class="hamButton"><span>&#9776;</span><span>&#9747;</span></button>
+            </div>
+            
+        </header>        
+        <main class="mainFresh">
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="aActive"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Build your specialty drink here!</h2>
+                <form class="fresh-form">
+                    <label for="first-name">First name:</label>
+                    <input id="first-name" name="first-name" type="text" autofocus required>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="myemail@example.com" required>
+                    <label for="cell-phone">Cell phone number:</label>
+                    <input id="cell-phone" name="cell-phone" type="tel" required>
+                    <label for="fruits1">Choose your fruits:</label>
+                    <select name="fruits1" id="fruits1" required>
+                    </select>
+                    <select name="fruits2" id="fruits2" required>
+                    </select>
+                    <select name="fruits3" id="fruits3" required>
+                    </select>
+                    <label for="instructions">Special instructions</label>
+                    <textarea id="instructions" name="instructions" rows="5"></textarea>
+                    <input class="urlButton" id="submit" type="button" value="Build it!">
+                </form>
+                <section class="form-values">
+                    <h3>Your order info</h3>
+                    <div>
+                        <span><strong>First name:</strong></span>
+                        <span id="first-name-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Email:</strong></span>
+                        <span id="email-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Phone:</strong></span>
+                        <span id="cell-phone-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Fruit 1:</strong></span>
+                        <span id="fruit1-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Fruit 2:</strong></span>
+                        <span id="fruit2-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Fruit 3:</strong></span>
+                        <span id="fruit3-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Special instructions:</strong></span>
+                        <span id="instructions-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Order date:</strong></span>
+                        <span id="date-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Carbohydrates:</strong></span>
+                        <span id="carbohydrates-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Protein:</strong></span>
+                        <span id="protein-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Fat:</strong></span>
+                        <span id="fat-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Sugar:</strong></span>
+                        <span id="sugar-value"></span>
+                    </div>
+                    <div>
+                        <span><strong>Calories:</strong></span>
+                        <span id="calories-value"></span>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="enterpriseInfo">
+                <img src="images/logo_bf.png" alt="Logo of Bountiful Foods">
+                <div>
+                    <span>Bountiful Foods</span>
+                    <span>1170 Tamarack Ave</span>
+                    <span>Carlsbad, CA 92008</span>
+                </div>
+                <div>
+                    <span>info@bountifulfoods.com</span>
+                    <span>+1 (760) 827-6701</span>
+                    <a class="urlButton" href="https://www.google.com.mx/maps/place/1170+Tamarack+Ave,+Carlsbad,+CA+92008,+EE.+UU./@33.1538339,-117.3354557,759m/data=!3m2!1e3!4b1!4m13!1m7!3m6!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!2sCarlsbad,+California,+EE.+UU.!3b1!8m2!3d33.1580933!4d-117.3505939!3m4!1s0x80dc723f58be8795:0xbf647f3b42f89708!8m2!3d33.1538339!4d-117.333267">Location Map</a>
+                </div>
+            </div>
+            <div class="developerData">
+                <div>
+                    <span>&copy;<span id="currentYear"></span> Bountiful Foods</span>
+                    <span>Manuel Cipriano</span>
+                    <span>WDD 230 Project</span>
+                    <span>Last Modification: <span id="lastModified"></span></span>
+                </div>
+                <div>
+                    <span>.</span>
+                    <span>Weather provided by </span>
+                    <a class="urlButton" href="https://openweathermap.org">Open Weather Map</a>
+                </div>
+                <div>
+                    <span>.</span>
+                    <a class="urlButton" href="resources.html">List of resources</a>
+                </div>
+            </div>
+        </footer>
+        <script src="scripts/fruits.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

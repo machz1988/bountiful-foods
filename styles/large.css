@@ -64,4 +64,14 @@
     .developerData div:nth-child(1){
         grid-row: 1/2;
     }
+
+    .mainFresh{
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .mainFresh ul{
+        display: grid;
+        flex-direction: 1fr 1fr 1fr;
+    }
 }

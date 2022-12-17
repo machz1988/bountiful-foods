@@ -258,3 +258,40 @@ footer a{
     width: 12rem;
     margin: 0 auto;
 }
+
+.mainFresh div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.mainFresh div h2{
+    text-align: center;
+}
+
+.fresh-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.fresh-form input, select, textarea{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.form-values{
+    display: none;
+}
+
+.form-values.showing{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+}
+
+.form-values.showing h3{
+    text-align: center;
+}
