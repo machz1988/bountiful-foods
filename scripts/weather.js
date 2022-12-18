@@ -152,4 +152,4 @@ apiFetch();
 const showDrinksServed = document.querySelector("#numberDrinksServed");
 const drinksServed = Number(window.localStorage.getItem("drinks-served-number"));
 showDrinksServed.textContent = drinksServed;
-console.log(drinksServed);
+//console.log(drinksServed);

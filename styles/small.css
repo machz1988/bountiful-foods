@@ -295,3 +295,56 @@ footer a{
 .form-values.showing h3{
     text-align: center;
 }
+
+.aboutUsMain{
+    padding: 1rem;
+}
+
+.aboutUsMain h2{
+    text-align: center;
+}
+
+.contactPoints{
+    background-color: var(--tertiary-color);
+    color: var(--white-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contactPoints article{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-map iframe{
+    width: 100%;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.message-sent{
+    display: none;
+}
+
+.message-sent.toShow{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
