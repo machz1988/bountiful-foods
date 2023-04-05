@@ -14,7 +14,7 @@
         grid-row: 1/2;
     }
 
-    .main-nav li{
+    .main-nav a{
         padding: 1rem;
     }
 

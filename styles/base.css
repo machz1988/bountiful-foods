@@ -92,7 +92,7 @@ header{
 
 .main-nav li{
     list-style: none;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
     border-bottom: 0.05rem solid var(--accent1-color);    
 }
 
@@ -105,8 +105,10 @@ header{
 }
 
 .main-nav a{
+    display: block;
     text-decoration: none;
     color: var(--white-color);
+    padding: 0.5rem;
 }
 
 .a-active{
