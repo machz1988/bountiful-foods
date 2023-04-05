@@ -46,36 +46,36 @@ the total amount of carbohydrates, protein, fat, sugar, and calories based upon 
  */
 
 function submitListener(){
-    const first_name = document.querySelector("#first-name").value;
+    const firstName = document.querySelector("#first-name").value;
     const email = document.querySelector("#email").value;
-    const cell_phone = document.querySelector("#cell-phone").value;
+    const cellPhone = document.querySelector("#cell-phone").value;
     const fruit1 = document.querySelector("#fruits1").value;
     const fruit2 = document.querySelector("#fruits2").value;
     const fruit3 = document.querySelector("#fruits3").value;
     const instructions = document.querySelector("#instructions").value;
     const date = new Date();
 
-    if (first_name!="" && email!="" && cell_phone!=""){
+    if (firstName!="" && email!="" && cellPhone!=""){
         
         document.querySelector(".form-values").classList.toggle("showing");
 
-        const display_name = document.querySelector("#first-name-value");
-        const display_email = document.querySelector("#email-value");
-        const display_phone = document.querySelector("#cell-phone-value");
-        const display_fruit1 = document.querySelector("#fruit1-value");
-        const display_fruit2 = document.querySelector("#fruit2-value");
-        const display_fruit3 = document.querySelector("#fruit3-value");
-        const display_instructions = document.querySelector("#instructions-value");
-        const display_date = document.querySelector("#date-value");
+        const displayName = document.querySelector("#first-name-value");
+        const displayEmail = document.querySelector("#email-value");
+        const displayPhone = document.querySelector("#cell-phone-value");
+        const displayFruit1 = document.querySelector("#fruit1-value");
+        const displayFruit2 = document.querySelector("#fruit2-value");
+        const displayFruit3 = document.querySelector("#fruit3-value");
+        const displayInstructions = document.querySelector("#instructions-value");
+        const displayDate = document.querySelector("#date-value");
 
-        display_name.textContent = first_name;
-        display_email.textContent = email;
-        display_phone.textContent = cell_phone;
-        display_fruit1.textContent = fruit1;
-        display_fruit2.textContent = fruit2;
-        display_fruit3.textContent = fruit3;
-        display_instructions.textContent = instructions;
-        display_date.textContent = date.toDateString();
+        displayName.textContent = firstName;
+        displayEmail.textContent = email;
+        displayPhone.textContent = cellPhone;
+        displayFruit1.textContent = fruit1;
+        displayFruit2.textContent = fruit2;
+        displayFruit3.textContent = fruit3;
+        displayInstructions.textContent = instructions;
+        displayDate.textContent = date.toDateString();
 
         let nut1 = null;
         let nut2 = null;

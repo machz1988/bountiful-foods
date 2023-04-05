@@ -39,7 +39,7 @@ header{
     padding-left: 0.5rem;
 }
 
-.phoneNumber{
+.phone-number{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header{
     align-self: center;
 }
 
-.hamButton{
+.ham-button{
     background-color: var(--primary-color);
     color: var(--accent1-color);
     border: none;
@@ -60,83 +60,83 @@ header{
     margin: 0;
 }
 
-.hamButton span:nth-child(1){
+.ham-button span:nth-child(1){
     display: block;
 }
 
-.hamButton span:nth-child(2){
+.ham-button span:nth-child(2){
     display: none;
 }
 
-.hamButton.open span:nth-child(1){
+.ham-button.open span:nth-child(1){
     display: none;
 }
 
-.hamButton.open span:nth-child(2){
+.ham-button.open span:nth-child(2){
     display: block;
 }
 
-.mainNav{
+.main-nav{
     display: none;
     background-color: var(--secondary-color);
 }
 
-.mainNav.open{
+.main-nav.open{
     display: block;
 }
 
-.mainNav ul{
+.main-nav ul{
     padding: 0;
     margin: 0;
 }
 
-.mainNav li{
+.main-nav li{
     list-style: none;
     padding: 0.5rem;
     border-bottom: 0.05rem solid var(--accent1-color);    
 }
 
-.mainNav li:hover{
+.main-nav li:hover{
     background-color: var(--accent2-color);
 }
 
-.mainNav li:hover a{
+.main-nav li:hover a{
     color: var(--white-color);
 }
 
-.mainNav a{
+.main-nav a{
     text-decoration: none;
     color: var(--white-color);
 }
 
-.aActive{
+.a-active{
     background-color: var(--tertiary-color);
 }
 
-.aActive a{
+.a-active a{
     color: var(--white-color);
 }
 
-.mainHome{
+.main-home{
     display: flex;
     flex-direction: column;
 }
 
-.callToAction{
+.call-to-action{
     position: relative;
 }
 
-.callToAction img{
+.call-to-action img{
     width: 100%;
 }
 
-.callToAction a{
+.call-to-action a{
     position: absolute;
     bottom: 1rem;
     left: 1rem;
 }
 
-.urlButton{
+.url-button{
     text-decoration: none;
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -144,31 +144,31 @@ header{
     border-radius: 0.5rem;
 }
 
-.urlButton:hover{
+.url-button:hover{
     background-color: var(--accent2-color);
     color: var(--white-color);
 }
 
-.coastalAreas{
+.coastal-areas{
     display: flex;
     flex-direction: column;
 }
 
-.coastalAreas article{
+.coastal-areas article{
     border-top: 0.2rem solid var(--primary-color);
 }
 
-.coastalAreas h2{
+.coastal-areas h2{
     text-align: center;
 }
 
-.coastalAreas p{
+.coastal-areas p{
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.coastalAreas img{
+.coastal-areas img{
     width: 100%;
 }
 
@@ -190,13 +190,13 @@ header{
     padding: 1rem;
 }
 
-.drinksServed{
+.drinks-served{
     padding: 1rem;
     border-top: 0.1rem solid var(--primary-color);
     text-align: center;
 }
 
-.socialMedia{
+.social-media{
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -205,15 +205,15 @@ header{
     justify-content: center;
 }
 
-.socialMedia a{
+.social-media a{
     padding-left: 0.3rem;
 }
 
-.socialMedia > img{
+.social-media > img{
     width: 5rem;
 }
 
-.socialMedia a:nth-child(3) img{
+.social-media a:nth-child(3) img{
     width: 2.5rem;
 }
 
@@ -222,13 +222,13 @@ footer{
     color: var(--accent1-color);
 }
 
-.enterpriseInfo{
+.enterprise-info{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.enterpriseInfo img{
+.enterprise-info img{
     border: 0.1rem dotted var(--accent2-color);
     width: 7rem;
     border-radius: 4rem;
@@ -236,13 +236,13 @@ footer{
     margin-top: 1rem;
 }
 
-.enterpriseInfo div{
+.enterprise-info div{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.developerData{
+.developer-data{
     border-top: 0.1rem dashed var(--accent2-color);
     margin-top: 1rem;
     padding-top: 1rem;
@@ -251,7 +251,7 @@ footer{
     text-align: center;
 }
 
-.developerData div{
+.developer-data div{
     display: flex;
     flex-direction: column;
 }
@@ -261,13 +261,13 @@ footer a{
     margin: 0 auto;
 }
 
-.mainFresh div{
+.main-fresh div{
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.mainFresh div h2{
+.main-fresh div h2{
     text-align: center;
 }
 
@@ -298,22 +298,22 @@ footer a{
     text-align: center;
 }
 
-.aboutUsMain{
+.about-us-main{
     padding: 1rem;
 }
 
-.aboutUsMain h2{
+.about-us-main h2{
     text-align: center;
 }
 
-.contactPoints{
+.contact-points{
     background-color: var(--tertiary-color);
     color: var(--white-color);
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.contactPoints article{
+.contact-points article{
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 1rem;

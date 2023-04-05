@@ -1,8 +1,8 @@
 const currentDate = Date.now();
 
 /** CURRENT WEATHER */
-const icon_elem = document.querySelector(".weather-condition");
-const wind_speed = document.querySelector(".humidity");
+const iconElem = document.querySelector(".weather-condition");
+const windSpeed = document.querySelector(".humidity");
 const url1 = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,US&units=metric&appid=0874fda4b0c5e7c7d087937b085abaea";
 
 async function apiFetch1(){
@@ -22,7 +22,7 @@ async function apiFetch1(){
 function displayResults1(data){
     //console.log(data);
     const displayCurrentWeather = document.querySelector(".weather-condition");
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description.split(" ");
     for (let i=0; i<desc.length; i++){
         desc[i] = desc[i].charAt(0).toUpperCase() + desc[i].slice(1);
@@ -30,7 +30,7 @@ function displayResults1(data){
     const description = desc.join(" ");
     const figure = document.createElement("figure");
     const img = document.createElement("img");
-    img.setAttribute("src", iconsrc);
+    img.setAttribute("src", iconSrc);
     img.setAttribute("alt", `${desc} icon`);
     figure.appendChild(img);
     const caption = document.createElement("figcaption");
@@ -112,9 +112,9 @@ function showResults(data){
         
         // weather icon
         const figure = document.createElement("figure");        
-        const iconsrc = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;
+        const iconSrc = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;
         const img = document.createElement("img");        
-        img.setAttribute("src", iconsrc);
+        img.setAttribute("src", iconSrc);
         img.setAttribute("alt", data.list[i].weather[0].description);
         //img.style.margin = "0 auto";
         const displayDescription = document.createElement("figcaption");
@@ -149,7 +149,7 @@ function showResults(data){
 apiFetch();
 
 /** Showing number of drinks served */
-const showDrinksServed = document.querySelector("#numberDrinksServed");
+const showDrinksServed = document.querySelector("#number-drinks-served");
 const drinksServed = Number(window.localStorage.getItem("drinks-served-number"));
 showDrinksServed.textContent = drinksServed;
 //console.log(drinksServed);
